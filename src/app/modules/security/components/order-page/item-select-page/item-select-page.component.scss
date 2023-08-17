@@ -1,0 +1,154 @@
+.main-container{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: .95;
+  padding: 100px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #686868;
+}
+
+.order-container{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+h2 {
+  font-family: 'Damion', cursive;
+  font-size: 24px;
+  color: #181818;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.button-set {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 15px 0;
+}
+
+button,
+.button {
+  outline: 1px black;
+  border: 1px black;
+  padding: 13px 30px;
+  background-image: linear-gradient(to top, #66e7e5 0%, #ed8daf 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  color:#000000;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-position: 0 0;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  .item-select {
+    display: block;
+    background-color: rgba(0, 0, 0, 0); /* Black with 0% opacity, making it transparent */
+    margin: 15px;
+    box-shadow: 0px 0px 20px rgba(13, 3, 3, 0.62);
+    padding: 20px;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+}
+  input[type="text"] {
+    color: #686868;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+
+    &:focus {
+      outline: 0 none;
+      color: #181818;
+    }
+  }
+
+  .filter {
+
+    .search-box {
+      margin: 15px 0 0;
+    }
+  }
+
+  .search-box {
+    label {
+      display: block;
+      margin: 0 0 5px;
+    }
+
+    input {
+      &.search {
+        padding: 10px;
+        border: 1px solid #D8D8D8;
+        transition: .3s;
+
+        &:focus {
+          color: #181818;
+          border: 1px solid #181818;
+        }
+      }
+    }
+  }
+
+
+  .form-select {
+    background: snow;
+    color: black;
+    height: 50px;
+    flex: 1;
+    width: 400px;
+  }
+
+  .item-details {
+    margin: 0;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .text::after {
+    content: "";
+    flex: 1;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: #8e8989;
+    max-width: 300px;
+  }
+
+  .add-cart {
+    width: 250px;
+    outline: 3px black;
+    margin-top: 120px;
+  }
+
